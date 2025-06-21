@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>camaratermica</name>
+  <version>1.1.0</version>
+  <description>ROS 2 nodes wrapping the binary driver for Optris thermal imager devices.</description>
+
+  <maintainer email="info@evocortex.com">Evocortex GmbH</maintainer>
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/optris_drivers</url>
+
+  <author>Stefan May (Nuremberg Institute of Technology Georg Simon Ohm - www.th-nuernberg.de)</author>
+  <author>64-Bit platform supported by Fraunhofer IPA (www.ipa.fraunhofer.de)</author>
+  <author>Support for ROS hydro migration by Christopher-Eyk Hrabia (DAI-Labor, Technische Universität Berlin)</author>
+
+  <!-- Build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>camera_info_manager</build_depend>
+  <build_depend>cv_bridge</build_depend>
+
+  <!-- Execution/runtime dependencies -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>camera_info_manager</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+
+  <!-- Optional system dependency -->
+  <build_depend>libudev-dev</build_depend>
+  <exec_depend>libudev-dev</exec_depend>
+
+  <!-- ament export -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
